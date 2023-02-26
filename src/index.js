@@ -1,6 +1,16 @@
 
 // You should implement your task here.
 
-module.exports = function towelSort (matrix) {
-  return [];
+function towelSort (matrix) {
+  let newArr = [];
+
+  matrix.forEach((element) => {
+     const i = 0;
+  const concArr = newArr.concat(matrix[i], matrix[i].reverse(), matrix[i]);
+  return concArr;
+
+  });
+
 }
+
+module.exports = towelSort;
